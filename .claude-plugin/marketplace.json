@@ -8,9 +8,10 @@
     {
       "name": "tf-diagram",
       "source": {
-        "type": "skill",
+        "source": "github",
         "repo": "anllacarpro/tf-diagram-skill",
-        "tag": "v0.1.0"
+        "ref": "v0.1.0",
+        "sha": "8a0c34eccf3184ac93f6a03c4de17c97e23b32cb"
       },
       "description": "Generate professional architecture diagrams (.drawio + PNG) from Terraform projects with official cloud icons.",
       "version": "0.1.0",
