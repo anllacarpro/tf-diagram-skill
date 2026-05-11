@@ -12,7 +12,7 @@
         "repo": "anllacarpro/tf-diagram-skill"
       },
       "description": "Generate professional architecture diagrams (.drawio + PNG) from Terraform projects with official cloud icons.",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "category": "iac",
       "tags": ["terraform", "diagram", "drawio", "aws", "gcp", "azure", "kubernetes"]
     }
