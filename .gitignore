@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.env
+.DS_Store
+Thumbs.db
+scripts/icons_cache/*
+!scripts/icons_cache/.gitkeep
+*.drawio.bak
+/tmp/
+.idea/
+.vscode/
+.claude/settings.local.json

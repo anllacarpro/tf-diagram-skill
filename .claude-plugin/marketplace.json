@@ -1,0 +1,17 @@
+{
+  "name": "tf-diagram-marketplace",
+  "owner": {
+    "name": "anllacarpro",
+    "url": "https://github.com/anllacarpro"
+  },
+  "plugins": [
+    {
+      "name": "tf-diagram",
+      "source": ".",
+      "description": "Generate professional architecture diagrams (.drawio + PNG) from Terraform projects with official cloud icons.",
+      "version": "0.1.0",
+      "category": "iac",
+      "tags": ["terraform", "diagram", "drawio", "aws", "gcp", "azure", "kubernetes"]
+    }
+  ]
+}

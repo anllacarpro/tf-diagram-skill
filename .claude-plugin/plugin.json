@@ -1,0 +1,26 @@
+{
+  "name": "tf-diagram",
+  "version": "0.1.0",
+  "description": "Generate professional enterprise-grade architecture diagrams from Terraform projects. Outputs editable .drawio + PNG with official AWS/GCP/Azure/Kubernetes icons.",
+  "author": {
+    "name": "Miguel Alarcon",
+    "url": "https://github.com/anllacarpro"
+  },
+  "homepage": "https://github.com/anllacarpro/tf-diagram-skill",
+  "repository": "https://github.com/anllacarpro/tf-diagram-skill",
+  "license": "MIT",
+  "keywords": [
+    "terraform",
+    "diagram",
+    "architecture",
+    "drawio",
+    "aws",
+    "gcp",
+    "azure",
+    "kubernetes",
+    "iac"
+  ],
+  "skills": [
+    "./"
+  ]
+}
