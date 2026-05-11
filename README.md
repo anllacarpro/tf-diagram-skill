@@ -4,6 +4,10 @@ Generate professional, enterprise-grade architecture diagrams from any Terraform
 
 ![status](https://img.shields.io/badge/status-beta-blue) ![license](https://img.shields.io/badge/license-MIT-green) ![python](https://img.shields.io/badge/python-3.10%2B-blue)
 
+![Example output — multi-cloud production infrastructure diagram](./assets/example.png)
+
+> _Example generated output: AWS VPC + EKS, GCP analytics, Databricks Unity Catalog, plus security and compliance overlays — all derived from `.tf` files._
+
 ## Features
 
 - Parses entire Terraform project recursively (`.tf` / `.hcl`)
