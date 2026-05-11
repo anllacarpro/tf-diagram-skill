@@ -7,7 +7,10 @@
   "plugins": [
     {
       "name": "tf-diagram",
-      "source": ".",
+      "source": {
+        "source": "github",
+        "repo": "anllacarpro/tf-diagram-skill"
+      },
       "description": "Generate professional architecture diagrams (.drawio + PNG) from Terraform projects with official cloud icons.",
       "version": "0.1.0",
       "category": "iac",
