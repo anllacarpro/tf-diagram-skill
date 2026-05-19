@@ -53,12 +53,17 @@ python3 scripts/tf_to_diagram.py <dir> --output arch.drawio --png arch.png --ver
 The `--verbose` flag prints a full resource table with providers, tiers, regions, and
 tag compliance. Always use it so you can report back to the user.
 
-### Step 3 — Copy output and present
+### Step 3 — Report output location
+
+Tell the user the absolute path to the generated files:
+- `.drawio` file: open at `https://app.diagrams.net` (drag & drop) or VS Code `Draw.io Integration` extension
+- `.png` file: preview in any image viewer
+
+If running inside the Claude.ai webapp, copy files and call `present_files`:
 ```bash
 cp arch.drawio /mnt/user-data/outputs/arch.drawio
 cp arch.png    /mnt/user-data/outputs/arch.png
 ```
-Then call `present_files` with both files.
 
 ### Step 4 — Report to user
 Always tell the user:
