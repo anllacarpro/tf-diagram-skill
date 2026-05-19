@@ -174,7 +174,7 @@ def build_drawio(tf_data: dict, project_name: str) -> str:
     for scope_idx, ((acc, reg), res_list) in enumerate(sorted(by_scope.items())):
         page_name = f'{acc} / {reg}' if acc != 'default' else (reg if reg != 'unknown-region' else project_name)
         diag = ET.SubElement(root_el, 'diagram', {'name': page_name})
-        _build_scope_page(diag, res_list, data_src, deps, variables, outputs, project_name)
+        _build_scope_page(diag, res_list, data_src, deps, variables, outputs, project_name, scope_idx)
 
     # Legend page
     legend_diag = ET.SubElement(root_el, 'diagram', {'name': '🗺 Legend'})
@@ -188,10 +188,7 @@ def _cell_id(page_idx, n):
     return f'p{page_idx}_{n}'
 
 
-_page_counter = [0]
-
-def _build_scope_page(diag_el, res_list, data_src, deps, variables, outputs, project_name):
-    idx = _page_counter[0]; _page_counter[0] += 1
+def _build_scope_page(diag_el, res_list, data_src, deps, variables, outputs, project_name, idx):
     mg = ET.SubElement(diag_el, 'mxGraphModel', {
         'dx':'1422','dy':'762','grid':'1','gridSize':'10','guides':'1',
         'tooltips':'1','connect':'1','arrows':'1','fold':'1','page':'1',
