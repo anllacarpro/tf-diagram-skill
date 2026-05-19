@@ -280,16 +280,17 @@ def _build_scope_page(diag_el, res_list, data_src, deps, variables, outputs, pro
                     if bad: style += 'strokeWidth=3;strokeColor=#FF0000;'
                     w,h = 90,40
 
-                cid = nid()
-                add_cell({'id':cid,'value':lbl,'tooltip':tooltip,
-                          'parent':'1','vertex':'1','style':style},
-                         {'x':rx,'y':ry,'width':w,'height':h})
-                id_map[key] = cid
-
-                # Data source badge
                 if tier == 'Data Sources':
-                    style2 = style.replace('strokeColor=#FF0000','').replace('strokeWidth=3;','')
-                    style2 += 'dashed=1;dashPattern=6 3;opacity=60;'
+                    applied_style = style.replace('strokeColor=#FF0000', '').replace('strokeWidth=3;', '')
+                    applied_style += 'dashed=1;dashPattern=6 3;opacity=60;'
+                else:
+                    applied_style = style
+
+                cid = nid()
+                add_cell({'id': cid, 'value': lbl, 'tooltip': tooltip,
+                          'parent': '1', 'vertex': '1', 'style': applied_style},
+                         {'x': rx, 'y': ry, 'width': w, 'height': h})
+                id_map[key] = cid
 
             cx2 += cw+PAD
         cy += swim_h+PAD
