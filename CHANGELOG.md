@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.1](https://github.com/anllacarpro/tf-diagram-skill/compare/v0.3.0...v0.3.1) (2026-05-19)
+
+
+### Bug Fixes
+
+* correct ICONS_DIR path — was double-nesting scripts/scripts/icons ([db73d19](https://github.com/anllacarpro/tf-diagram-skill/commit/db73d1910aaacdf51d6ccad14ff93a4d7320c305))
+* correct ICONS_DIR path and bump to 0.3.1 ([d2ede94](https://github.com/anllacarpro/tf-diagram-skill/commit/d2ede9437d3254689aa9f6c010bd9f0059562a26))
+
 ## [0.3.0](https://github.com/anllacarpro/tf-diagram-skill/compare/v0.2.0...v0.3.0) (2026-05-19)
 
 
