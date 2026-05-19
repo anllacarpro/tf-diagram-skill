@@ -1,6 +1,6 @@
 {
   "name": "tf-diagram",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Generate professional enterprise-grade architecture diagrams from Terraform projects. Outputs editable .drawio + PNG with official AWS/GCP/Azure/Kubernetes icons.",
   "author": {
     "name": "Miguel Alarcon",
