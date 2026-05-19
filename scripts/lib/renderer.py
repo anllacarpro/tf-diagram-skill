@@ -11,8 +11,8 @@ import matplotlib.patheffects as pe
 from matplotlib.patches import FancyBboxPatch, Rectangle
 import matplotlib.image as mpimg
 
-SKILL_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-ICONS_DIR = os.path.join(SKILL_DIR, 'scripts', 'icons')
+SKILL_DIR = os.path.dirname(os.path.abspath(__file__))
+ICONS_DIR = os.path.normpath(os.path.join(SKILL_DIR, '..', 'icons'))
 
 # ── Icon path map ─────────────────────────────────────────────────────────────
 def _a(p): return os.path.join(ICONS_DIR,'aws',p)
