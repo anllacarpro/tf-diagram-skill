@@ -10,11 +10,11 @@
       "source": {
         "source": "github",
         "repo": "anllacarpro/tf-diagram-skill",
-        "commit": "d2ede9437d3254689aa9f6c010bd9f0059562a26",
-        "sha": "d2ede9437d3254689aa9f6c010bd9f0059562a26"
+        "commit": "599e93bdb20b2b4e114f4a41c76f6bcadbc77bd5",
+        "sha": "599e93bdb20b2b4e114f4a41c76f6bcadbc77bd5"
       },
       "description": "Generate professional architecture diagrams (.drawio + PNG) from Terraform projects with official cloud icons.",
-      "version": "0.3.1",
+      "version": "0.3.2",
       "category": "iac",
       "tags": ["terraform", "diagram", "drawio", "aws", "gcp", "azure", "kubernetes"]
     }
