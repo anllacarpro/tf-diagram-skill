@@ -141,7 +141,15 @@ ENV_RE = re.compile(r'^(dev|staging|prod|production|sandbox|shared|mgmt|manageme
 ACCOUNT_RE = re.compile(r'^\d{12}$')
 
 def infer_region_account(filepath: str, config: dict, tf_root: str) -> tuple:
-    parts = Path(os.path.relpath(filepath, tf_root)).parts
+    # filepath may be relative (already rel to tf_root) or absolute
+    if os.path.isabs(filepath):
+        try:
+            rel = os.path.relpath(filepath, tf_root)
+        except ValueError:
+            rel = filepath
+    else:
+        rel = filepath
+    parts = Path(rel).parts
     region = 'unknown-region'
     account = 'default'
     for part in parts:
