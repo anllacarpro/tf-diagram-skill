@@ -291,7 +291,7 @@ def render_diagram(tf_data: dict, project_name: str, output_path: str):
         fontsize=7, va='center', ha='right', color='#FF9900', zorder=3)
 
     # Divider
-    ax.plot([W*0.60, W*0.60], [90, H-30], color='#DDE1E7', lw=1.2, ls='--', zorder=3)
+    ax.plot([W*0.62, W*0.62], [90, H-30], color='#DDE1E7', lw=1.2, ls='--', zorder=3)
 
     PAD = 30
     XGAP = 130
