@@ -180,7 +180,10 @@ def parse_project(directory: str) -> dict:
         glob.glob(os.path.join(tf_root, '**/*.tf'), recursive=True) +
         glob.glob(os.path.join(tf_root, '**/*.hcl'), recursive=True)
     )
-    tf_files = [f for f in tf_files if '/.terraform/' not in f]
+    tf_files = [
+        f for f in tf_files
+        if '.terraform' + os.sep not in f and '/.terraform/' not in f
+    ]
 
     if not tf_files:
         print(f'  WARNING: No .tf/.hcl files found in {directory}')
