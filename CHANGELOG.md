@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.2](https://github.com/anllacarpro/tf-diagram-skill/compare/v0.3.1...v0.3.2) (2026-05-19)
+
+
+### Bug Fixes
+
+* use mxfile root element for multi-page drawio — fixes Duplicate ID error ([322b54e](https://github.com/anllacarpro/tf-diagram-skill/commit/322b54ea9b187309deea82cbdb357f3becb42d88))
+
 ## [0.3.1](https://github.com/anllacarpro/tf-diagram-skill/compare/v0.3.0...v0.3.1) (2026-05-19)
 
 
