@@ -168,16 +168,16 @@ def build_drawio(tf_data: dict, project_name: str) -> str:
         scope = (rd.get('account','default'), rd.get('region','unknown-region'))
         by_scope[scope].append((key, rd))
 
-    root_el = ET.Element('mxGraphModel')
+    root_el = ET.Element('mxfile', {'host': 'app.diagrams.net', 'version': '21.0.0'})
 
     # One diagram page per scope
     for scope_idx, ((acc, reg), res_list) in enumerate(sorted(by_scope.items())):
         page_name = f'{acc} / {reg}' if acc != 'default' else (reg if reg != 'unknown-region' else project_name)
-        diag = ET.SubElement(root_el, 'diagram', {'name': page_name})
+        diag = ET.SubElement(root_el, 'diagram', {'name': page_name, 'id': f'page-{scope_idx}'})
         _build_scope_page(diag, res_list, data_src, deps, variables, outputs, project_name, scope_idx)
 
     # Legend page
-    legend_diag = ET.SubElement(root_el, 'diagram', {'name': '🗺 Legend'})
+    legend_diag = ET.SubElement(root_el, 'diagram', {'name': '🗺 Legend', 'id': 'page-legend'})
     _build_legend_page(legend_diag, tf_data)
 
     ET.indent(root_el, space='  ')
