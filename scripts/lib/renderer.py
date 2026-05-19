@@ -131,7 +131,7 @@ ICON_PATHS = {
 
 FALLBACK_ICONS = {
     'aws': _a('aws.png'), 'gcp': _g('gcp.png'),
-    'azure': _z('azure.png'), 'kubernetes': _k('k8s.png'),
+    'azure': _z('azure.png'), 'k8s': _k('k8s.png'),
     'helm': _k('ecosystem/helm.png'), 'databricks': _g('analytics/bigquery.png'),
 }
 
