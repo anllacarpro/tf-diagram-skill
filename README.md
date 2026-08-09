@@ -1,3 +1,5 @@
+
+
 # tf-diagram — Terraform → Architecture Diagram skill
 
 Generate professional, enterprise-grade architecture diagrams from any Terraform project. Produces an editable `.drawio` file (multi-page, one per region/account + Legend) and a PNG preview with **official** AWS, GCP, Azure, Kubernetes, Helm and Databricks icons.
@@ -57,7 +59,7 @@ Ask Claude in natural language — the skill auto-triggers on phrases like:
 
 ## Output
 
-- **`<name>.drawio`** — Multi-page editable diagram (open in <https://app.diagrams.net> or VS Code Draw.io extension)
+- **`<name>.drawio`** — Multi-page editable diagram (open in https://app.diagrams.net or VS Code Draw.io extension)
 - **`<name>.png`** — Preview image with official cloud icons
 
 ## Requirements
